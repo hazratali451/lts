@@ -1,0 +1,36 @@
+html
+    scroll-padding-top: 85px
+
+body
+    background-color: #000000
+    color: #FFFFFF
+    // scrollbar
+    &::-webkit-scrollbar
+        width: 10px
+        &-track
+            background: #141414
+        &-thumb
+            background: #20B48E
+        &-thumb:hover
+            background: #80F5D4
+
+a
+    color: #FFFFFF
+
+main
+    >section
+        min-height: min(1200px, calc(100vh - 84px))
+        display: flex
+        align-items: center
+        justify-content: center
+        padding-top: 5vw
+        padding-bottom: 5vw
+        @media (max-width: 768px)
+            min-height: auto
+            min-height: auto
+            // padding-top: 50px
+            // padding-bottom: 50px
+        @media (max-height: 768px)
+            min-height: auto
+
+        // border: 1px solid

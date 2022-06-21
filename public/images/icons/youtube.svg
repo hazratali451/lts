@@ -1,0 +1,4 @@
+<svg id="youtube" xmlns="http://www.w3.org/2000/svg" width="183.791" height="39.348" viewBox="0 0 183.791 39.348">
+  <path id="Icon_awesome-youtube" data-name="Icon awesome-youtube" d="M46.414,9.6a5.822,5.822,0,0,0-4.1-4.123C38.7,4.5,24.216,4.5,24.216,4.5s-14.488,0-18.1.974A5.822,5.822,0,0,0,2.018,9.6C1.05,13.234,1.05,20.822,1.05,20.822s0,7.588.968,11.224a5.735,5.735,0,0,0,4.1,4.057c3.613.974,18.1.974,18.1.974s14.488,0,18.1-.974a5.735,5.735,0,0,0,4.1-4.057c.968-3.637.968-11.224.968-11.224s0-7.588-.968-11.224ZM19.478,27.711V13.933l12.11,6.889-12.11,6.889Z" transform="translate(-1.05 2.27)" fill="#4d4d4d"/>
+  <text id="Youtube-2" data-name="Youtube" transform="translate(62.791 31)" fill="#4d4d4d" font-size="29" font-family="OpenSans-Bold, Open Sans" font-weight="700"><tspan x="0" y="0">Youtube</tspan></text>
+</svg>

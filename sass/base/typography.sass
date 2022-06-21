@@ -1,0 +1,67 @@
+@font-face
+    font-family: "Nunito"
+    src: url("../../public/fonts/Nunito/Nunito-ExtraBold.ttf") format("truetype")
+
+$font-name: "SF-Pro"
+$font-weight: "Bold", "BoldItalic", "Regular", "Medium", "MediumItalic"
+
+@if ($font-name != "" and nth($font-weight,1) != "")
+    @each $i in $font-weight
+        @font-face
+            font-family: "#{$font-name nth($i,1)}"
+            src: url("../../public/fonts/#{$font-name}/#{$font-name}-#{nth($i,1)}.otf") format("truetype")
+
+body
+    font-family: "SF-Pro Regular", sans-serif
+    font-stretch: normal
+    font-style: normal
+    font-weight: normal
+    letter-spacing: normal
+    font-size: 1rem
+
+h1,
+h2,
+h3,
+h5,
+h6
+    font-family: "SF-Pro Regular"
+    font-weight: 500
+    line-height: 1.5
+    &:first-letter
+        text-transform: uppercase
+
+h1
+    font-size: clamp(40px, 5.2vw, 75px)
+    line-height: 1.2
+
+h2
+    font-size: clamp(35px, 4.8vw, 62px)
+
+h3
+    font-size: clamp(30px,3.5vw,35px)
+
+h4
+    font-family: "Nunito"
+    font-size: clamp(28px,3vw,32px)
+
+h5
+    font-size: clamp(24px,2.5vw,28px)
+
+h6
+    font-size: 24px
+
+p
+    font-size: 20px
+    line-height: 1.4
+    font-size: clamp(14px,2.5vw,16px)
+    color: #606060
+
+a
+    font-family: "SF-Pro Regular"
+    font-size: 14px
+
+.btn,
+button
+    font-family: "SF-Pro Medium"
+    font-weight: 500
+    font-size: clamp(14px,2vw,16px)
