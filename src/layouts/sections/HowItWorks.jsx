@@ -9,8 +9,8 @@ const HowItWorks = () => {
 	return (
 		<Style id="how-we-work">
 			<div className="container">
-				<h3>How It Works</h3>
-				<Grid col={4} gapX={10} gapY={60} className="grid">
+				<h3 data-aos-duration="600" data-aos="flip-up">How It Works</h3>
+				<Grid data-aos="flip-up" data-aos-duration="600" col={4} gapX={10} gapY={60} className="grid">
 					<Card
 						step={1}
 						Icon={Consultation}

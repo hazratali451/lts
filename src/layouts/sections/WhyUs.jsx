@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
-import shapes from "../../../public/images/shapes.png";
+import shapes from "/public/images/shapes.png";
 
 const WhyUs = () => {
 	const data = [
@@ -25,14 +25,14 @@ const WhyUs = () => {
 		<Style>
 			<div className="w-100">
 				<div className="container">
-					<h2>Why Choose Us</h2>
+					<h2 data-aos-duration="600" data-aos="flip-up">Why Choose Us</h2>
 					<p>
 						crambled it to make a type specimen book. It has survived not
 						only five centuries, but also the leap into
 					</p>
 					<div className="card-wrapper">
 						{data?.map((item, i) => (
-							<div className="card" key={i}>
+							<div data-aos="flip-down" data-aos-duration="1000" className="card" key={i}>
 								<div className="inner">
 									<h3 className="title">{item.title}</h3>
 									<span>{item.subtitle}</span>
@@ -41,7 +41,10 @@ const WhyUs = () => {
 						))}
 					</div>
 				</div>
-				<div className="shapes">
+				<div
+					data-aos="fade-left"
+					data-aos-duration="2000"
+					className="shapes">
 					<Image src={shapes} alt="" />
 				</div>
 			</div>

@@ -26,11 +26,7 @@ const Calendar = () => {
 	return (
 		<Style id="calendar">
 			<div className="container">
-				<h2>Pick a time to speak with a Website Consultant</h2>
-
-				{/* <div className="mt-5 text-center">
-					<InlineWidget url="https://calendly.com/lyncktechsolutions/consultation" />
-				</div> */}
+				<h2 data-aos="zoom-in-up" data-aos-duration="600">Pick a time to speak with a Website Consultant</h2>
 				{isWork && <PopupButton
 					url="https://calendly.com/lyncktechsolutions/consultation"
 					rootElement={document.getElementById("__next")}

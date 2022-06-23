@@ -44,7 +44,7 @@ const Reviews = () => {
 	return (
 		<Style>
 			<div className="container">
-				<h2>What Other Says About Us</h2>
+				<h2 data-aos-duration="600" data-aos="flip-up">What Other Says About Us</h2>
 				<div className="position-relative">
 					<Swiper {...settings}>
 						{data?.map((item, index) => (
@@ -110,10 +110,10 @@ const Review = ({ data }) => {
 	const swiper = useSwiper();
 	return (
 		<ReviewStyle>
-			<div className="thumb">
+			<div data-aos="fade-right" data-aos-duration="1000" className="thumb">
 				<Image src={data.image} alt={data.name} />
 			</div>
-			<div className="content">
+			<div data-aos="fade-left" data-aos-duration="1000" className="content">
 				<div className="name-area">
 					<div className="name">
 						<h5>{data.name}</h5>

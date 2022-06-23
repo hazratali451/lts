@@ -8,9 +8,9 @@ const WhoWeAre = () => {
 	return (
 		<Style id="who-we-are">
 			<div className="container">
-				<h3>Who We Are</h3>
+				<h3 data-aos-duration="600" data-aos="flip-up">Who We Are</h3>
 				<Grid col={2} alignItems>
-					<div className="illus">
+					<div data-aos="fade-right" data-aos-duration="500" className="illus">
 						<Image
 							className="image"
 							src={Building}
@@ -19,7 +19,7 @@ const WhoWeAre = () => {
 							height={456}
 						/>
 					</div>
-					<div>
+					<div data-aos="fade-left" data-aos-duration="500" >
 						<h2>
 							Printing and typesetting industry has been industry’s
 							standard

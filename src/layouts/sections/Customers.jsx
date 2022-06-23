@@ -13,15 +13,16 @@ const Customers = () => {
 		<Style id="our-customers">
 			<div className="w-100">
 				<div className="container">
-					<h3>Our Customers</h3>
-					<h2>Our customers Lorem Ipsum</h2>
+					<h3 data-aos-duration="600" data-aos="flip-up">Our Customers</h3>
+					<h2 data-aos="zoom-in" data-aos-duration="600">Our customers Lorem Ipsum</h2>
 					<p>
 						crambled it to make a type specimen book. It has survived not
 						only five centuries, but also the leap into electronic
 						typesetting, remaining essentially unchanged lor ndustry.{" "}
 					</p>
 				</div>
-				<div className="partners">
+				<div data-aos="fade-up"
+					data-aos-duration="1000" className="partners">
 					<Apple />
 					<Microsoft />
 					<Tesla />

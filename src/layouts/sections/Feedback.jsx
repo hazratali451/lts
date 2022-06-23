@@ -35,8 +35,8 @@ const Feedback = () => {
 	return (
 		<Style>
 			<div className="container">
-				<h3>Happy Reviews</h3>
-				<h2>What Our Happy customers say About Us</h2>
+				<h3 data-aos-duration="600" data-aos="flip-up">Happy Reviews</h3>
+				<h2 data-aos="flip-up" data-aos-duration="1000">What Our Happy customers say About Us</h2>
 				<Swiper {...settings}>
 					{data?.map((item, index) => (
 						<SwiperSlide key={index}>
@@ -81,15 +81,15 @@ const Style = styled.section`
 const Review = ({ data }) => {
 	return (
 		<ReviewStyle>
-			<div className="stars">
+			<div data-aos="flip-up" data-aos-duration="1000" className="stars">
 				{data?.stars >= 1 && <Star />}
 				{data?.stars >= 2 && <Star />}
 				{data?.stars >= 3 && <Star />}
 				{data?.stars >= 4 && <Star />}
 				{data?.stars >= 5 && <Star />}
 			</div>
-			<p>{data?.feedback}</p>
-			<footer>
+			<p data-aos="flip-up" data-aos-duration="1000">{data?.feedback}</p>
+			<footer data-aos="flip-up" data-aos-duration="1000">
 				<span>{data?.fullName}</span>
 				<span>{data?.job}</span>
 			</footer>

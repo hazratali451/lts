@@ -1,26 +1,35 @@
+import { useState } from "react";
+import { PopupButton } from "react-calendly";
 import styled from "styled-components";
 import Building from "../../../public/images/illustrations/building.svg";
 import { Grid } from "../../components/Grid";
 
 // TODO: scroll to section
 const Hero = () => {
+	const [isWork, setIsWork] = useState(false)
+
+	setTimeout(() => {
+		setIsWork(true)
+	}, 1000)
 	return (
 		<Style id="home">
 			<div className="shapes"></div>
 			<div className="container">
 				<Grid gapX={10} gapY={10} className="text">
-					<div className="content">
+					<div data-aos="fade-up" data-aos-duration="600" className="content">
 						<h1>
 							Established fact that a reader will be distracted by the
 							readable
 						</h1>
 						<p>
 							simply dummy text of the printing and typesetting industry.
-							Lorem Ipsum has been the industry's standards
+							Lorem Ipsum has been the industry&apos;s standards
 						</p>
-						<a href="#calendar" className="btn">
-							Book a call
-						</a>
+						{isWork ? <PopupButton
+							url="https://calendly.com/lyncktechsolutions/consultation"
+							rootElement={document.getElementById("__next")}
+							text="Book a call"
+						/> : <button>Book a call</button>}
 					</div>
 					<div className="illus">
 						<Building />

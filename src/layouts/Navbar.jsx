@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { PopupButton } from "react-calendly";
 import styled from "styled-components";
 
 import Logo from "../../public/images/brand/logo.png";
@@ -11,13 +12,18 @@ const Navbar = () => {
 		});
 		return () => {
 			setScroll(false);
-			window.removeEventListener("scroll", () => {});
+			window.removeEventListener("scroll", () => { });
 		};
 	}, []);
+	const [isWork, setIsWork] = useState(false)
+
+	setTimeout(() => {
+		setIsWork(true)
+	}, 1000)
 	return (
 		<Style className={scroll ? "scroll" : ""}>
 			<div className="container">
-				<a href="/" className="brand">
+				<a href="#home" className="brand">
 					<img src={Logo.src} alt="" />
 				</a>
 				<Links>
@@ -25,9 +31,11 @@ const Navbar = () => {
 					<a href="#our-services">Our services</a>
 					<a href="#how-we-work">How we work</a>
 					<a href="#our-customers">our customers</a>
-					<a href="#calendar" className="btn">
-						Book a call
-					</a>
+					{isWork ? <PopupButton
+						url="https://calendly.com/lyncktechsolutions/consultation"
+						rootElement={document.getElementById("__next")}
+						text="Book a call"
+					/> : <button>Book a call</button>}
 				</Links>
 			</div>
 		</Style>

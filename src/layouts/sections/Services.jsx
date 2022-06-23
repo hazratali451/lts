@@ -12,9 +12,9 @@ const Services = () => {
 	return (
 		<Style id="our-services">
 			<div className="container">
-				<h3>Our Services</h3>
+				<h3 data-aos-duration="500" data-aos="flip-up">Our Services</h3>
 				<Grid col={2} alignItems>
-					<div>
+					<div data-aos="fade-right" data-aos-duration="500">
 						<h2>Best Payment Sevices for your Transaction </h2>
 						<p>
 							crambled it to make a type specimen book. It has survived
@@ -24,6 +24,9 @@ const Services = () => {
 					</div>
 					<Grid col={2} gapX={20} gapY={20} className="grid">
 						<Service
+							data-aos-duration="500"
+							data-aos="zoom-in"
+							data-aos-delay="100"
 							className="active"
 							title={
 								<>
@@ -32,9 +35,25 @@ const Services = () => {
 							}
 							Icon={Security}
 						/>
-						<Service title="Free transaction free" Icon={Money} />
-						<Service title="Security guaranteed" Icon={Lock} />
-						<Service title="All in one Ultibank app" Icon={Card} />
+						<Service
+							data-aos-duration="500"
+							data-aos-delay="100"
+							data-aos="zoom-in"
+							title="Free transaction free"
+							Icon={Money} />
+						<Service
+							data-aos-duration="500"
+							data-aos-delay="100"
+							data-aos="zoom-in"
+							title="Security guaranteed"
+							Icon={Lock} />
+
+						<Service
+							data-aos-duration="500"
+							data-aos-delay="100"
+							data-aos="zoom-in"
+							title="All in one Ultibank app"
+							Icon={Card} />
 					</Grid>
 				</Grid>
 			</div>
